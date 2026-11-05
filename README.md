@@ -113,7 +113,7 @@ Literature review, background (image processing, camera calibration, deep-learni
 
 ## Publication
 
-Chachoua, M. E., & Öztürk, S. (2024). *Derin Öğrenme İle PLC Kontrollü Delta Robot Pet Şişe Ayrıştırma Sistemi Uygulaması*. In F. Kuncan & A. Yıldırım (Eds.), *Disiplinlerarası Akademik Çalışmalar* (2nd ed., pp. 61-93). İKSAD, Ankara. DOI: [10.5281/zenodo.13825221](https://doi.org/10.5281/zenodo.13825221) | [Book chapter](docs/DISIPLINLERARASI-AKADEMIK-CALISMALAR-II.pdf) | [Publisher page](https://iksadyayinevi.com/book/613)
+Chachoua, M. E., & Öztürk, S. (2024). *Derin Öğrenme İle PLC Kontrollü Delta Robot Pet Şişe Ayrıştırma Sistemi Uygulaması*. In F. Kuncan & A. Yıldırım (Eds.), *Disiplinlerarası Akademik Çalışmalar* (2nd ed., pp. 61-93). İKSAD, Ankara. [Book chapter](docs/DISIPLINLERARASI-AKADEMIK-CALISMALAR-II.pdf) | [Publisher page](https://iksadyayinevi.com/book/613) | DOI: [10.5281/zenodo.13825221](https://doi.org/10.5281/zenodo.13825221).
 
 ## Files
 
