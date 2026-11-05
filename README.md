@@ -35,20 +35,37 @@ A vision-guided pick-and-place system. A webcam and a deep-learning detector fin
 ### Algorithm (from the thesis)
 
 ```
-Start; home the robot; calibrate the camera
-while not finished:
-    capture image; process image; detect objects; compute visual positions
-    K = number of target points
-    if K == 0: continue
-    for i = 1..K:
-        plan waypoints; predict position; compute joint angles; get target data
-        motion_control()
-
-function motion_control():
-    read the next target's data
-    if the target is outside the workspace: skip it
-    compute velocities and robot position
-    write them to the PLC data block
+ 1. Start
+ 2. Initializing the system
+ 3. Homing Process
+ 4. Camera calibration
+ 5. while a termination criterion is not met do
+ 6.     Image acquisition
+ 7.     Image processing
+ 8.     Object detection
+ 9.     Visual positioning
+10.     N ← Number of target points
+11.     if N == 0
+12.         continue
+13.     end if
+14.     for i ← 1 to N do
+15.         Plan the pick-and-place paths
+16.         Picking position calculation
+17.         Angles values calculation
+18.         Acquire targets' information
+19.         Motion_control()
+20.     end for
+21. end while
+22. function Motion_control()
+23.     Read the next targets' information
+24.     if target is not within workspace
+25.         Go to step 23
+26.     end if
+27.     Calculate speed values
+28.     robot motion calculation
+29.     Write data in PLC's buffer
+30.     Increase the index
+31. end function
 ```
 
 ## Results
@@ -96,7 +113,7 @@ Literature review, background (image processing, camera calibration, deep-learni
 
 ## Publication
 
-Chachoua, M. E., & Öztürk, S. (2024). *Derin Öğrenme İle PLC Kontrollü Delta Robot Pet Şişe Ayrıştırma Sistemi Uygulaması*. In F. Kuncan & A. Yıldırım (Eds.), *Disiplinlerarası Akademik Çalışmalar* (2nd ed., pp. 61-93). İKSAD, Ankara. [Book chapterl](docs/DISIPLINLERARASI-AKADEMIK-CALISMALAR-II.pdf) DOI: [10.5281/zenodo.13825221](https://doi.org/10.5281/zenodo.13825221) | [Publisher page](https://iksadyayinevi.com/book/613)
+Chachoua, M. E., & Öztürk, S. (2024). *Derin Öğrenme İle PLC Kontrollü Delta Robot Pet Şişe Ayrıştırma Sistemi Uygulaması*. In F. Kuncan & A. Yıldırım (Eds.), *Disiplinlerarası Akademik Çalışmalar* (2nd ed., pp. 61-93). İKSAD, Ankara. DOI: [10.5281/zenodo.13825221](https://doi.org/10.5281/zenodo.13825221) | [Book chapter](docs/DISIPLINLERARASI-AKADEMIK-CALISMALAR-II.pdf) | [Publisher page](https://iksadyayinevi.com/book/613)
 
 ## Files
 
